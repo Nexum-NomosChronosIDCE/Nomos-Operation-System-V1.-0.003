@@ -330,3 +330,4 @@ if __name__ == "__main__":
         raise ValueError("Invalid network configuration.")
     threading.Thread(target=run_telemetry_engine, daemon=True).start()
     uvicorn.run(app, host=os.getenv("HOST", "0.0.0.0"), port=int(os.getenv("PORT", 8000)))
+run.sh
